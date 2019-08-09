@@ -1,0 +1,36 @@
+{
+  "name": "know",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "9.6.1",
+    "beeper": "1.1.1",
+    "cssnano": "4.1.10",
+    "gscan": "2.7.0",
+    "gulp": "4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-livereload": "4.0.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "3.0.2",
+    "gulp-zip": "4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-color-function": "4.1.0",
+    "postcss-custom-properties": "8.0.11",
+    "postcss-easy-import": "3.0.0",
+    "pump": "3.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
+}
