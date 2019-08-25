@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="assets/bootstrap/bootstrap.css"/>
   <link type="text/css" rel="stylesheet" href="assets/app/css/app.min.css?ver=1153"/>
 </head>
-<body>
+<body class="home-template"><!-- 添加 .home-template 以便识别模板为首页 -->
 <div class="site-warp">
   <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,7 +35,7 @@
       </div>
     </nav>
   </header>
-  <section class="site-hero responsive-title-img">
+  <section class="site-hero responsive-title-img" style="background-image: url('./assets/images/hero-background.jpg');">
     <div class="container">
       <div class="hero-content">
         <h1 class="site-name">淮城一只猫</h1>
@@ -67,12 +67,8 @@
                   <li class="author-list-item">
                     <a href="#" class="static-avatar">
                       <img class="author-profile-image" src="./assets/images/myheader.jpg" alt="淮城一只猫">
+                      <span class="author-profile-name">淮城一只猫</span>
                     </a>
-                  </li>
-                  <li class="author-name" data-author-count="1" data-singular="other" data-plural="others">
-                    <span>
-                      <a href="#">淮城一只猫</a>
-                    </span>
                   </li>
                 </ul>
                 <span class="reading-time"><i class="far fa-clock"></i>  1 分钟阅读</span>
@@ -306,12 +302,35 @@
           </article>
         </div>
       </div>
+      <div class="site-pagination">
+        <nav aria-label="文章分页">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="上一页">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-left"></i>
+                </span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="下一页">
+                <span aria-hidden="true">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container d-flex justify-content-sm-between justify-content-center text-center">
       <div class="copyright">
-        <p>Powered by Ghost. Copyright &copy; 2019. Crafted with NoName.</p>
+        <p>Powered by Ghost. Copyright &copy; 2019. Crafted with Frenemy.</p>
       </div>
       <nav class="social-links d-none d-sm-block">
         <ul>
@@ -321,6 +340,7 @@
       </nav>
     </div>
   </footer>
+  <div id="return-to-top" class="animated"><i class="fas fa-angle-double-up"></i></div>
 </div>
 
 <script type="text/javascript" src="assets/jquery/jquery.js"></script>

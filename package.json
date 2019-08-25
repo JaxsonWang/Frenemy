@@ -1,14 +1,21 @@
 {
-  "name": "know",
+  "name": "frenemy",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "engines": {
+    "ghost": ">=2.0.0",
+    "ghost-api": "v2"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "淮城一只猫",
+    "email": "i@iiong.com",
+    "url": "https://iiong.com"
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "9.6.1",

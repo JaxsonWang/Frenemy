@@ -9,12 +9,13 @@
 
     nav.navbar {
       background-color: #fff;
-      padding: 8px 10px;
+      padding: 12px 0;
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .15);
-      transition: all 250ms ease 0s;
+      transition: all 250ms ease 0ms;
 
       &.top-nav {
-        padding: 15px 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-color: transparent;
         box-shadow: none;
 
@@ -24,6 +25,7 @@
 
           .navbar-toggler {
           }
+
           .navbar-collapse {
             .navbar-nav {
               .nav-item {
@@ -31,6 +33,7 @@
                   .nav-link {
                   }
                 }
+
                 .nav-link {
                 }
               }
@@ -38,6 +41,7 @@
           }
         }
       }
+
       .navbar-brand {
         font-size: 22px;
       }
@@ -67,6 +71,14 @@
 
 // 小于 576px
 @media (max-width: 575.98px) {
+  .site-warp {
+    .site-header {
+      nav.navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
 }
 
 // 576px 以上
