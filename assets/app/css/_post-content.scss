@@ -1,10 +1,11 @@
 /**
   @Author 淮城一只猫
   @Date 2019-08-09
-  @Name 主题文章正文样式
+  @Name 主题文章/页面正文样式
  */
 
-.post-template {
+.post-template,
+.page-template {
   .site-warp {
     .site-main {
       z-index: 1;
@@ -28,6 +29,12 @@
               font-size: 1.5rem;
               margin-right: 0.5rem;
               color: #000;
+            }
+          }
+
+          figure {
+            img {
+              width: 100%;
             }
           }
         }
