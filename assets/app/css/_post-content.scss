@@ -18,6 +18,7 @@
             font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
             line-height: 1em/1.8;
             font-weight: normal;
+
             a {
               border-bottom: 1px solid #000;
             }
@@ -34,8 +35,19 @@
 
           figure {
             img {
-              width: 100%;
+              max-width: 100%;
             }
+            figcaption {
+              text-align: center;
+              font-weight: lighter;
+              color: rgba(0,0,0,.5);
+              padding-top: 0.5rem;
+              font-style: italic;
+            }
+          }
+
+          img {
+            max-width: 100%;
           }
         }
       }
