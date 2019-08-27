@@ -1,6 +1,12 @@
-### Hello World
+### Frenemy
 
-[Demo](https://i95.me/theme)
+又名`庆桑`，纪念和一个朋友长久友谊而定！
+
+---
+
+[Demo Home](https://i95.me/theme) / 
+[Demo Post](https://i95.me/theme/post.html) / 
+[Demo Page](https://i95.me/theme/page.html)
 
 [个人博客](https://iiong.com)
 
