@@ -5,11 +5,11 @@
   win.pivot = {
     'init': init
   };
-  
+
   var _prevent_scroll = false;
 
   function init (config) {
-    var _touch = (!!('ontouchstart' in win) || !!('onmsgesturechange' in win) || !!(navigator.MaxTouchPoints));
+    var _touch = (('ontouchstart' in win) || ('onmsgesturechange' in win) || !!(navigator.MaxTouchPoints));
     var _targets;
     var _target;
     var _container;
@@ -327,7 +327,7 @@
     var rxp = new RegExp(cssClass + '\\s*', 'gi');
     return cssClasses.replace(rxp, '').replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
   }
-  
+
   function rebounce (func) {
     var scheduled, context, args, i, j;
     return function () {
