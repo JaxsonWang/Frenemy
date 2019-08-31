@@ -18,6 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@wordpress/browserslist-config": "^2.6.0",
     "autoprefixer": "9.6.1",
     "beeper": "1.1.1",
     "cssnano": "4.1.10",
@@ -37,7 +38,6 @@
     "pump": "3.0.0"
   },
   "browserslist": [
-    "last 2 version",
-    "> 2%"
+    "extends @wordpress/browserslist-config"
   ]
 }

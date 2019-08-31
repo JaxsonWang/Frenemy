@@ -4,13 +4,11 @@
 
 ---
 
-实例正在编写中，由于工作繁忙，进度可能慢一些。请耐心等待！
-
  - [x] 静态页面效果
- - [x] Ghost 主题 (源码暂未公开，请耐心等待！)
- - [ ] WordPress 主题
+ - [x] Ghost 主题
+ - [x] WordPress 主题
  - [x] Typecho 主题
- - [ ] Halo 主题
+ - [x] Halo 主题
  - [ ] Hexo 主题
  
  ---
@@ -21,13 +19,15 @@
  
  展示站点：[淮城一只猫](https://iiong.com)
  
- 源码地址：暂未公开
+ 源码地址：[Github Ghost Theme Frenemy](https://github.com/JaxsonWang/Ghost-Theme-Frenemy)
  
  ### WordPress
  
  维护人：[@淮城一只猫](https://github.com/JaxsonWang)
  
- 正在编写
+ 展示站点：暂无展示站
+ 
+ 源码地址：[Github WordPress Theme Frenemy](https://github.com/JaxsonWang/WordPress-Theme-Frenemy)
  
  ### Typecho
  
@@ -41,7 +41,9 @@
  
  维护人：[@Ryan Wang](https://github.com/ruibaby)
  
- 源码地址：[halo-theme-frenemy](https://github.com/halo-dev/halo-theme-frenemy)
+ 展示站点：暂无展示站
+ 
+ 源码地址：[Github Halo Theme Frenemy](https://github.com/halo-dev/halo-theme-frenemy)
 
 ### Hexo
  
@@ -81,3 +83,7 @@ BootStrap.js: [https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.m
 Font Awesome.css: [https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css](https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css)
 
 jQuery.js: [https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js](https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js)
+
+### License
+
+Frenemy Frenemy is licensed under GNU General Public License Version 3 or later.

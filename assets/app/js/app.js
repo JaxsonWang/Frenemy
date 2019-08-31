@@ -4,39 +4,39 @@ var loadFiles = {
   css: []
 };
 
-(function ($, pivot) {
-  $(function () {
+(function (frenemy, pivot) {
+  frenemy(function () {
     //初始化顶栏透明
     isScrollTop() ? addTopNav() : removeTopNav();
     //滚动顶栏透明
-    $(window).scroll(function () {
+    frenemy(window).scroll(function () {
       isScrollTop() ? addTopNav() : removeTopNav();
     });
     // 移动端点击菜单按钮添加样式
-    $('.navbar-toggler').click(function (event) {
-      if ($(this).attr('aria-expanded') === 'false') {
+    frenemy('.navbar-toggler').click(function (event) {
+      if (frenemy(this).attr('aria-expanded') === 'false') {
         if (isScrollTop()) {
-          $('nav.navbar').removeClass(['navbar-dark', 'top-nav']).addClass('navbar-light');
+          frenemy('nav.navbar').removeClass(['navbar-dark', 'top-nav']).addClass('navbar-light');
         }
-        $('html').addClass('overflow-hidden');
+        frenemy('html').addClass('overflow-hidden');
       } else {
         if (isScrollTop()) {
-          $('nav.navbar').addClass(['navbar-dark', 'top-nav']).removeClass('navbar-light');
+          frenemy('nav.navbar').addClass(['navbar-dark', 'top-nav']).removeClass('navbar-light');
         }
-        $('html').removeClass('overflow-hidden');
+        frenemy('html').removeClass('overflow-hidden');
       }
     });
     // 回到顶部
-    var returnTop = $('#return-to-top');
-    $(window).scroll(function () {
-      if ($(this).scrollTop() >= 50) {
+    var returnTop = frenemy('#return-to-top');
+    frenemy(window).scroll(function () {
+      if (frenemy(this).scrollTop() >= 50) {
         returnTop.addClass('bounceInRight').removeClass('bounceOutDown')
       } else {
         returnTop.removeClass('bounceInRight').addClass('bounceOutDown');
       }
     });
     returnTop.click(function () {
-      $('body,html').animate(
+      frenemy('body,html').animate(
         {
           scrollTop: 0
         },
@@ -58,7 +58,7 @@ var loadFiles = {
   loadScript('//cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js', function () {
     loadScript('//cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js', function () {
         //将html代码块支持高亮
-        $('.post-content pre code').attr('class', function (i, clazz) {
+        frenemy('.post-content pre code').attr('class', function (i, clazz) {
           if (clazz !== undefined) {
             return clazz.replace(/language-html/g, 'language-markup');
           }
@@ -75,7 +75,7 @@ var loadFiles = {
   loadCSS('//cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.css');
   loadScript('//cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js');
   //支持行号显示
-  $('.post-content pre').addClass('line-numbers');
+  frenemy('.post-content pre').addClass('line-numbers');
   //显示语言或者粘贴
   loadCSS('//cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.min.css');
   loadScript('//cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.min.js');
@@ -94,14 +94,14 @@ var loadFiles = {
    * 添加导航样式
    */
   function addTopNav() {
-    $('nav.navbar').addClass('top-nav').addClass('navbar-dark').removeClass('navbar-light');
+    frenemy('nav.navbar').addClass('top-nav').addClass('navbar-dark').removeClass('navbar-light');
   }
 
   /**
    * 移除导航样式
    */
   function removeTopNav() {
-    $('nav.navbar').removeClass('top-nav').removeClass('navbar-dark').addClass('navbar-light');
+    frenemy('nav.navbar').removeClass('top-nav').removeClass('navbar-dark').addClass('navbar-light');
   }
 
   /**
@@ -109,7 +109,7 @@ var loadFiles = {
    * @returns {boolean} true = 是在页面顶部
    */
   function isScrollTop() {
-    return $(document).scrollTop() <= 0
+    return frenemy(document).scrollTop() <= 0
   }
 })(window.jQuery, window.pivot);
 
