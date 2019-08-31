@@ -41,7 +41,7 @@
  
  维护人：[@Ryan Wang](https://github.com/ruibaby)
  
- 暂无计划
+ 源码地址：[halo-theme-frenemy](https://github.com/halo-dev/halo-theme-frenemy)
 
 ### Hexo
  
