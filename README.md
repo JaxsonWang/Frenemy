@@ -86,4 +86,4 @@ jQuery.js: [https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js](https://cdn.
 
 ### License
 
-Frenemy Frenemy is licensed under GNU General Public License Version 3 or later.
+Frenemy is licensed under GNU General Public License Version 3 or later.
