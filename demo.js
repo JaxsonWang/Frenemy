@@ -10,7 +10,7 @@
       window.location.href = './post.html';
     });
 
-    $('.navbar-nav').on('click', '.nav-item', function () {
+    $('.navbar-nav').on('click', '.nav-item .nav-link', function () {
       window.location.href = './page.html';
     })
   })

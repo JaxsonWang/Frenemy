@@ -55,3 +55,26 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 }
+
+[data-theme="dark"] {
+  .site-warp {
+    .site-main {
+      .site-pagination {
+        .pagination {
+          .page-item {
+            &.active {
+              span {
+                background-color: $bg-dark-2;
+                color: $dark-font;
+              }
+            }
+            a {
+              color: $dark-font;
+              background-color: $bg-dark-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

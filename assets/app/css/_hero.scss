@@ -101,3 +101,22 @@
 @media (max-width: 1199.98px) {
 
 }
+
+[data-theme="dark"] {
+  .site-warp {
+    .site-hero {
+      &.responsive-title-img {
+      }
+
+      &.responsive-title-no-img {
+        &::after {
+          background-image: linear-gradient(-180deg, rgb(80, 109, 160) 0, rgb(81, 160, 160) 100%);
+        }
+      }
+
+      .hero-content {
+        color: $dark-font;
+      }
+    }
+  }
+}

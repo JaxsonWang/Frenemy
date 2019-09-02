@@ -91,6 +91,18 @@ var loadFiles = {
   });
 
   /**
+   * 日夜切换
+   */
+  var darkSwitch = document.getElementById("darkSwitch");
+  if (darkSwitch) {
+    initTheme();
+    darkSwitch.addEventListener("change", function (event) {
+      resetTheme();
+    });
+  }
+  $('.dark-switch-label-span').tooltip();
+
+  /**
    * 添加导航样式
    */
   function addTopNav() {
@@ -165,6 +177,38 @@ function loadCSS(fileName, callback, into) {
     document.getElementsByTagName('head')[0].appendChild(css);
   } else {
     document.body.appendChild(css);
+  }
+}
+
+/**
+ * 日夜模式 - 加载
+ */
+function initTheme() {
+  var darkThemeSelected =
+    localStorage.getItem("darkSwitch") !== null &&
+    localStorage.getItem("darkSwitch") === "dark";
+  darkSwitch.checked = darkThemeSelected;
+  if (darkThemeSelected) {
+    document.body.setAttribute("data-theme", "dark");
+    document.querySelector('.dark-switch-label-span').innerHTML = '<i class="fas fa-sun"></i>';
+  } else {
+    document.body.removeAttribute("data-theme");
+    document.querySelector('.dark-switch-label-span').innerHTML = '<i class="fas fa-moon"></i>';
+  }
+}
+
+/**
+ * 日夜模式 - 重置
+ */
+function resetTheme() {
+  if (darkSwitch.checked) {
+    document.body.setAttribute("data-theme", "dark");
+    document.querySelector('.dark-switch-label-span').innerHTML = '<i class="fas fa-sun"></i>';
+    localStorage.setItem("darkSwitch", "dark");
+  } else {
+    document.body.removeAttribute("data-theme");
+    document.querySelector('.dark-switch-label-span').innerHTML = '<i class="fas fa-moon"></i>';
+    localStorage.removeItem("darkSwitch");
   }
 }
 

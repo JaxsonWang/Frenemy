@@ -34,3 +34,28 @@
     }
   }
 }
+
+[data-theme="dark"] {
+  .site-warp {
+    .site-footer {
+      .copyright {
+        p {
+          color: $dark-font;
+          a {
+            color: $dark-font;
+            border-bottom: 1px solid $dark-font;
+          }
+        }
+      }
+      .social-links {
+        ul {
+          .social-link {
+            a {
+              color: $dark-font;
+            }
+          }
+        }
+      }
+    }
+  }
+}

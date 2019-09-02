@@ -17,12 +17,12 @@
     //animation-timing-function: ease-out;
 
     .inner {
-      background: #fff;
       padding: 75px;
       border-radius: 2px;
       box-shadow: 0 2px 24px 5px rgba(0, 0, 0, .05);
       margin: 0 auto;
       width: 100%;
+      background: #fff;
 
       .site-post-list {
         .post-list {
@@ -266,6 +266,88 @@
     .site-main {
       &.container {
         max-width: 100%;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .site-warp {
+    .site-main {
+      .inner {
+        background-color: $bg-dark-2;
+        box-shadow: 0 2px 24px 5px $bg-dark-1;
+
+        .site-post-list {
+          .post-list {
+            .post-card {
+              .post-card-image-link {
+                .post-card-image {
+                  box-shadow: 5px 6px 26px -3px $bg-dark-1;
+                  &::after {
+                    background-image: linear-gradient(-180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .8) 100%);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              .post-card-content {
+                .post-tags {
+                  .post-tag {
+                    a {
+                      color: #999;
+                    }
+                  }
+                }
+                .post-card-title {
+                  a {
+                    color: $dark-font;
+                    font-size: 20px;
+                  }
+                }
+
+                .post-card-excerpt {
+                  p {
+                    color: #666;
+                  }
+                }
+
+                .post-meta {
+                  .author-list {
+                    .author-list-item {
+                      .static-avatar {
+                        .author-profile-image {
+                          border: 2px solid $dark-font;
+                          &::after {
+                            background-image: linear-gradient(-180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .8) 100%);
+                            content: "";
+
+                            width: 100%;
+                            height: 100%;
+                          }
+                        }
+                        .author-profile-name {
+                          color: $dark-font;
+                        }
+                      }
+                    }
+                    .author-name {
+                      color: $dark-font;
+                    }
+                  }
+                  .reading-time {
+                    color: $dark-font;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
