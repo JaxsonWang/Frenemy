@@ -85,7 +85,9 @@ var loadFiles = {
 
   //图箱支持
   loadScript('//cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js', function () {
-    var zoom = mediumZoom(document.querySelectorAll('.post-content img'));
+    var zoom = mediumZoom(document.querySelectorAll('.post-content img'), {
+      background: 'transparent',
+    });
     zoom.on('open', function (event) {
     })
   });
