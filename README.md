@@ -33,9 +33,9 @@
  
  维护人：[@JaydenForYou](https://github.com/JaydenForYou)
  
- 展示站点：[Jayden星龙](https://iobiji.com/)
+ 展示站点：[会飞的龙](https://iobiji.com/)
 
- 源码地址：[Github JaydenForU](https://github.com/JaydenForYou/JaydenForU)
+ 源码地址：[Github CREAMy](https://github.com/JaydenForYou/CREAMy)
 
 ### Halo
  
