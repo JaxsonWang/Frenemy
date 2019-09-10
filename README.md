@@ -23,11 +23,11 @@
  
  ### WordPress
  
- 维护人：[@淮城一只猫](https://github.com/JaxsonWang)
+ 维护人：[@crazyming9528](https://github.com/crazyming9528)
  
  展示站点：暂无展示站
  
- 源码地址：[Github WordPress Theme Frenemy](https://github.com/JaxsonWang/WordPress-Theme-Frenemy)
+ 源码地址：[Github WordPress Theme Frenemy](https://github.com/crazyming9528/WordPress-Theme-Frenemy)
  
  ### Typecho
  

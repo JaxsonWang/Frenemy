@@ -11,7 +11,7 @@
 <body class="home-template"><!-- 添加 .home-template 以便识别模板为首页 -->
 <div class="site-warp">
   <header class="site-header fixed-top">
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="/">淮城一只猫</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,14 +28,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#">关于</a>
             </li>
-            <li class="nav-item m-0 d-none d-md-block d-lg-block d-xl-block">
+            <li class="nav-item m-0 d-none d-md-none d-lg-block d-xl-block">
               <div class="site-searchbar">
                 <label for="nav-top-search"></label>
                 <input id="nav-top-search" class="search-input" type="text" placeholder="Search...">
                 <a class="search-icon"><i class="fas fa-search"></i></a>
               </div>
             </li>
-            <li class="nav-item d-block d-md-none d-lg-none d-xl-none">
+            <li class="nav-item d-block d-md-block d-lg-none d-xl-none">
               <form class="mobile-search">
                 <div class="input-group">
                   <input type="text" class="mobile-search-input form-control" placeholder="Search..." aria-label="Search Input">
@@ -340,11 +340,23 @@
     </div>
   </footer>
   <div id="return-to-top" class="fixed-tools animated"><i class="fas fa-angle-double-up"></i></div>
+  <div id="toast" class="app-toasts toast animated bounceInRight">
+    <div class="toast-header">
+      <strong class="mr-auto">淮城一只猫</strong>
+      <small>2019-08-26 晚发布</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      本周近期正在前端重构模板，如有BUG复现，请谅解！感谢访问！！
+      <p class="tips">手动关闭后不再弹窗提醒</p>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript" src="assets/jquery/jquery.js"></script>
 <script type="text/javascript" src="assets/bootstrap/bootstrap.js"></script>
-<script type="text/javascript" src="assets/pivot/pivot.js"></script>
 <script type="text/javascript" src="assets/app/js/app.min.js"></script>
 <script type="text/javascript" src="./demo.js"></script>
 </body>
