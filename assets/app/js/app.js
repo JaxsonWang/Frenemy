@@ -404,7 +404,7 @@ function rebounce(func) {
     touch: false
   });
 
-  if ($('.post-content pre code').length !== 0) {
+  if (document.querySelector('.post-content pre code') !== null) {
     //Prism高亮支持
     loadCSS('//cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism-tomorrow.min.css');
     loadScript('//cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js', function () {
@@ -443,7 +443,8 @@ function rebounce(func) {
         background: '#fff',
       });
       zoom.on('open', function (event) {
-      })
+      });
+      zoom.detach('img.kg-bookmark-icon', '.kg-bookmark-thumbnail img')
     });
   }
 
