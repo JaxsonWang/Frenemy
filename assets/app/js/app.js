@@ -394,10 +394,11 @@ function rebounce(func) {
           scrollTop: 0
         }, 500);
     });
-
   });
 
-  // 文章列表动效
+  /**
+   * 文章列表动效
+   */
   pivot.init({
     selector: '.site-post-list .post-card-image-link',
     sensitivity: 80,
@@ -436,7 +437,9 @@ function rebounce(func) {
     loadScript('//cdn.jsdelivr.net/npm/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js');
   }
 
-  //图箱支持
+  /**
+   * 图箱支持
+   */
   if ($('.post-content img').length !== 0) {
     loadScript('//cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js', function () {
       var zoom = mediumZoom(document.querySelectorAll('.post-content img'), {
