@@ -587,7 +587,6 @@ function initPage() {
       resetTheme();
     });
   }
-  $('[data-toggle="tooltip"]').tooltip();
 
   /**
    * 添加导航样式
@@ -606,7 +605,7 @@ function initPage() {
   /**
    * 弹窗提醒
    */
-  if(!localStorage.noPopUp) {
+  if(!Boolean(localStorage.noPopUp)) {
     $('#toast').toast({
       autohide: true,
       delay: 5000
@@ -615,7 +614,7 @@ function initPage() {
       localStorage.setItem('noPopUp', true)
     });
   } else {
-    $('#toast').remove();
+    $('#toast').toast('hide');
   }
 }
 
