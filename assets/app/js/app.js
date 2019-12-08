@@ -587,7 +587,7 @@ function initPage() {
       resetTheme();
     });
   }
-  $('.dark-switch-label-span').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 
   /**
    * 添加导航样式
