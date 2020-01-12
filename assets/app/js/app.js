@@ -619,7 +619,9 @@ function initPage() {
 }
 
 // 页面初始化执行
-initPage();
+$(document).ready(function () {
+  initPage();
+})
 
 window.onload = function () {
   log();
